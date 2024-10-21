@@ -39,3 +39,10 @@ insert into product(product_id,product_name)
 insert into product_offer
     values(2434224,"Y","44%",3000),(2433544,"Y","22%",2000),(2475754,"Y","25%",5000),(2454443,"S","55%",4500),(2376335,"Y","40%",7000);
 
+insert into orders(order_id,customer_id)
+values(101,20001),(102,20002),(103,20003),(104,20004),(105,20005);
+insert into order_details(product_quantity,shipping_address)
+values(2,"Mandi"),(3,"Kullu"),(5,"Shimla"),(10,"Chandigarh"),(7,"Solan");
+insert into payment_details(total_amount,order_status)
+values(99.99,"Pending"),(45.99,"Delivered"),(499.99,"Pending"),(599.99,"Delivered"),(999.99,"Delivered");
+

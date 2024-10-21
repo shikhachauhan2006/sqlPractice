@@ -13,3 +13,10 @@ create table user (id int(12) primary key, name varchar(15) NOT NULL, email varc
 create table user_detail (id int(12), name varchar(15) NOT NULL, fathername varchar(18) NOT NULL, mothername varchar(16) NOT NULL, phonenumber int(10) NOT NULL ) ;
 create table user_address (currentaddress varchar(100), permanentaddress varchar(100) ) ;
 
+insert into orders(order_id,customer_id)
+values(101,20001),(102,20002),(103,20003),(104,20004),(105,20005);
+insert into order_details(product_quantity,shipping_address)
+values(2,"Mandi"),(3,"Kullu"),(5,"Shimla"),(10,"Chandigarh"),(7,"Solan");
+insert into payment_details(total_amount,order_status)
+values(99.99,"Pending"),(45.99,"Delivered"),(499.99,"Pending"),(599.99,"Delivered"),(999.99,"Delivered");
+
